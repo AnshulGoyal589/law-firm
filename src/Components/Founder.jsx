@@ -1,0 +1,38 @@
+import React from 'react';
+import shivaniImg from '../assets/images/shivani-garg.png';
+import flagUsa from '../assets/images/flag-usa.png';
+import flagIndia from '../assets/images/flag-india.png';
+import flagCanada from '../assets/images/flag-canada.png';
+import flagUk from '../assets/images/flag-uk.png';
+
+const Founder = () => {
+  return (
+    <section id="founder" className="bg-white py-20">
+      <div className="container mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
+        <div className=" border-2 h-[50vh] md:w-2/5">
+          {/* <img src={shivaniImg} alt="Shivani Garg, Co-Founder" className="rounded-lg shadow-2xl w-full" /> */}
+          <img src={"j"} alt="Shivani Garg, Co-Founder" className="rounded-lg shadow-2xl w-full" />
+        </div>
+        <div className="md:w-3/5 text-center md:text-left">
+          <p className="font-semibold tracking-widest text-[#6c757d]">TRUSTED GLOBALLY. ROOTED LOCALLY.</p>
+          <h2 className="font-serif text-6xl my-4 font-bold text-[#1d2d3d]">Shivani <span className="text-[#C0A068]">Garg</span></h2>
+          <h3 className="text-2xl text-[#1d2d3d] font-semibold mb-6">Co-Founder @ BizBase Legal</h3>
+          <blockquote className="text-xl text-[#6c757d] italic border-l-4 border-[#C0A068] pl-6 my-8">
+            "Shivani speaks simple, strikes deep, and sparks minds into action."
+          </blockquote>
+          <div className="flex justify-center md:justify-start items-center space-x-6 my-8">
+            <img src={flagUsa} alt="USA Flag" className="h-8"/>
+            <img src={flagIndia} alt="India Flag" className="h-8"/>
+            <img src={flagCanada} alt="Canada Flag" className="h-8"/>
+            <img src={flagUk} alt="UK Flag" className="h-8"/>
+          </div>
+          <a href="https://www.linkedin.com/in/shivani-g-524b2b64/" className="inline-block bg-[#1d2d3d] text-white font-bold py-3 px-8 rounded-md hover:bg-[#343a40] transition-all duration-300">
+            View LinkedIn Profile
+          </a>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Founder;
