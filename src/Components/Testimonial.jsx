@@ -10,7 +10,7 @@ const Testimonial = () => {
           <div className="relative z-10">
             <div className="text-2xl text-[#C0A068] mb-6">★★★★★</div>
             <blockquote className="text-xl lg:text-2xl leading-relaxed text-[#343a40] mb-8 italic">
-              "Working with BizBase Legal has been an absolute game-changer... Their team has a knack for turning legal complexities into easy-to-understand solutions. From contracts to influencing itself, they've got it covered."
+              "Working with Biz Internaglo has been an absolute game-changer... Their team has a knack for turning legal complexities into easy-to-understand solutions. From contracts to influencing itself, they've got it covered."
             </blockquote>
             <cite className="block not-italic">
               <span className="block text-xl font-bold font-serif text-[#1d2d3d]">Mr. K.</span>

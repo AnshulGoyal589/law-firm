@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import logo from '../assets/images/logo.png'; // Make sure this path is correct
-import { FaFacebookF, FaTwitter, FaLinkedinIn, FaBehance, FaPhone, FaClock, FaChevronDown, FaBars, FaTimes } from 'react-icons/fa';
+import { FaFacebookF, FaTwitter, FaInstagram , FaMailBulk , FaBehance, FaPhone, FaClock, FaChevronDown, FaBars, FaTimes } from 'react-icons/fa';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -33,10 +33,10 @@ const Navbar = () => {
               </div>
             </div>
             <div className="flex items-center space-x-4">
-              <a href="#" className="text-[#343a40] hover:text-[#C0A068] transition-colors"><FaFacebookF /></a>
-              <a href="#" className="text-[#343a40] hover:text-[#C0A068] transition-colors"><FaTwitter /></a>
-              <a href="#" className="text-[#343a40] hover:text-[#C0A068] transition-colors"><FaLinkedinIn /></a>
-              <a href="#" className="text-[#343a40] hover:text-[#C0A068] transition-colors"><FaBehance /></a>
+              {/* <a href="#" className="text-[#343a40] hover:text-[#C0A068] transition-colors"><FaFacebookF /></a> */}
+              <a href="https://www.instagram.com/bizinternaglo?igsh=MTRxdTJmODlrNWhtNQ==" className="text-[#343a40] hover:text-[#C0A068] transition-colors"><FaInstagram /></a>
+              <a href="bizinternaglo@gmail.com" className="text-[#343a40] hover:text-[#C0A068] transition-colors"><FaMailBulk /></a>
+              {/* <a href="#" className="text-[#343a40] hover:text-[#C0A068] transition-colors"><FaBehance /></a> */}
             </div>
           </div>
         </div>
@@ -77,7 +77,7 @@ const Navbar = () => {
         {/* Mobile Menu Header */}
         <div className="flex justify-between items-center p-4 border-b border-gray-200">
           <a href="#home" onClick={() => setIsMenuOpen(false)}>
-            <img src={logo} alt="Biz Internaglo Logo" className="h-10" />
+            <img src={logo} alt="Biz Internaglo Logo"  />
           </a>
           <button onClick={() => setIsMenuOpen(false)} className="text-3xl text-[#1d2d3d]">
             <FaTimes />

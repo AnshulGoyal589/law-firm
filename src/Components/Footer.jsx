@@ -39,7 +39,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="mt-16 py-6 border-t border-white/10 text-center text-sm">
-          <p>© {new Date().getFullYear()} BizBase Legal. All Rights Reserved.</p>
+          <p>© {new Date().getFullYear()} Biz Internaglo. All Rights Reserved.</p>
         </div>
       </div>
     </footer>
