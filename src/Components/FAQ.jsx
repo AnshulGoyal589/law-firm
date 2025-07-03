@@ -59,7 +59,7 @@ const FAQ = () => {
         <div className="flex flex-col lg:flex-row justify-center items-stretch gap-8">
           
           {/* Left Accordion Column */}
-          <div className="flex justify-around w-full lg:w-auto">
+          <div className="flex justify-around hidden lg:block w-full lg:w-auto">
             <AccordionItem 
               title={faqData[0].title} 
               isOpen={openIndex === 0} 
@@ -88,7 +88,7 @@ const FAQ = () => {
           </div>
           
           {/* Right Accordion Column */}
-          <div className="flex justify-around lg:justify-start w-full lg:w-auto">
+          <div className="flex justify-around hidden lg:block lg:justify-start w-full lg:w-auto">
             <AccordionItem 
               title={faqData[2].title} 
               isOpen={openIndex === 2} 

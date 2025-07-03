@@ -6,7 +6,7 @@ const ContactForm = () => {
       <div className="container mx-auto px-6">
         {/* Section Heading */}
         <div className="text-center mb-16 max-w-2xl mx-auto">
-          <h2 className="font-serif text-5xl md:text-6xl font-bold text-[#1d2d3d] uppercase">
+          <h2 className="font-serif text-4xl md:text-6xl font-bold text-[#1d2d3d] uppercase">
             Request a <span className="text-[#C0A068]">Free</span> Consultation
           </h2>
           <p className="text-[#6c757d] mt-4">
