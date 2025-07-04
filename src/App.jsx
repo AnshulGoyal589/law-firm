@@ -10,6 +10,7 @@ import Footer from './Components/Footer';
 import AboutUs from './Components/AboutUs';
 import FAQ from './Components/FAQ';
 import ContactForm from './Components/ContactForm';
+import FoundersSection from './Components/Founderssection';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Solutions />
         <Benefits />
         <Founder />
+        <FoundersSection/>
         <Testimonial />
         <FAQ/>
         <ContactForm/>
