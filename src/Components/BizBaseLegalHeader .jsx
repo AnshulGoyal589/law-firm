@@ -1,6 +1,7 @@
 import React from 'react';
 // Make sure the path to your logo/avatar is correct
-import founderAvatar from '../assets/images/logo.png';
+// import founderAvatar from '../assets/images/logo.png';
+import aditi from '../assets/images/aditi-deshmukh.png'; // Updated image path
 
 const BizBaseLegalHeader = () => {
   return (
@@ -21,9 +22,9 @@ const BizBaseLegalHeader = () => {
             </p>
 
             <div className="flex items-center justify-center lg:justify-start mt-12 space-x-4">
-              <img src={founderAvatar} alt="Kristin D. Watson" className="w-16 h-16 rounded-full object-cover border-2 border-gray-200" />
+              <img src={aditi} alt="Kristin D. Watson" className="w-16 h-16 rounded-full object-cover border-2 border-gray-200" />
               <div>
-                <p className="font-bold text-lg text-[#054039]">KRISTIN D WATSON</p>
+                <p className="font-bold text-lg text-[#054039]">Aditi Deshmukh</p>
                 <p className="text-sm font-semibold tracking-wider text-[#bb8f4d]">HEAD OF IDEA</p>
               </div>
             </div>

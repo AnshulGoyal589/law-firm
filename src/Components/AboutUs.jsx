@@ -2,7 +2,8 @@ import React from 'react';
 // Import the updated icons
 import { FaChartLine, FaUserTie, FaBullseye, FaLightbulb } from 'react-icons/fa';
 // Import your image asset (ensure the path is correct)
-import founderAvatar from '../assets/images/logo.png';
+// import founderAvatar from '../assets/images/logo.png';
+import aditi from '../assets/images/aditi-deshmukh.png'; // Updated image path
 
 // --- Rewritten Feature Data for a Business-Centric Appeal ---
 // The content is now focused on value and impact for companies and startups.
@@ -50,9 +51,9 @@ const AboutUs = () => {
             </p>
 
             <div className="flex items-center justify-center lg:justify-start mt-12 space-x-4">
-              <img src={founderAvatar} alt="Kristin D. Watson" className="w-16 h-16 rounded-full object-cover border-2 border-gray-200" />
+              <img src={aditi} alt="Kristin D. Watson" className="w-16 h-16 rounded-full object-cover border-2 border-gray-200" />
               <div>
-                <p className="font-bold text-lg text-[#1d2d3d]">KRISTIN D WATSON</p>
+                <p className="font-bold text-lg text-[#1d2d3d]">Aditi Deshmukh</p>
                 <p className="text-sm font-semibold tracking-wider text-[#C0A068]">HEAD OF IDEA</p>
               </div>
             </div>
