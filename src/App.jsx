@@ -11,6 +11,8 @@ import AboutUs from './Components/AboutUs';
 import FAQ from './Components/FAQ';
 import ContactForm from './Components/ContactForm';
 import FoundersSection from './Components/Founderssection';
+import BizBaseLegalHeader from './Components/BizBaseLegalHeader ';
+import AboutFeatures from './Components/AboutFeatures';
 
 function App() {
   return (
@@ -18,7 +20,8 @@ function App() {
       <Navbar />
       <main>
         <Hero />
-        <AboutUs/>
+        <BizBaseLegalHeader/>
+        <AboutFeatures/>
         <ProblemStatement />
         <Solutions />
         <Benefits />

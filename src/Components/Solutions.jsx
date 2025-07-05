@@ -11,7 +11,8 @@ const Solutions = () => {
   return (
     <section id="solutions" className="bg-white py-20">
       <div className="container mx-auto px-6 text-center">
-        <h2 className="text-4xl font-bold text-[#1d2d3d] uppercase">From <span className="text-[#C0A068]">Confusion</span> to <span className="text-[#C0A068]">Clarity</span></h2>
+        {/* Heading updated with new brand colors */}
+        <h2 className="text-4xl font-bold text-[#054039] uppercase">From <span className="text-[#bb8f4d]">Confusion</span> to <span className="text-[#bb8f4d]">Clarity</span></h2>
         <p className="text-lg text-[#6c757d] mt-4 mb-12 max-w-3xl mx-auto">
           Our immersive sessions provide the legal literacy that empowers founders and builders to move forward with confidence.
         </p>
@@ -19,7 +20,8 @@ const Solutions = () => {
           {solutionsData.map((solution) => (
             <div key={solution.title} className="bg-[#f8f9fa] p-8 rounded-lg transform hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
               <div className="text-5xl mb-6">{solution.icon}</div>
-              <h3 className="font-serif text-2xl font-bold text-[#1d2d3d] mb-3">{solution.title}</h3>
+              {/* Card title updated with new brand color */}
+              <h3 className="font-serif text-2xl font-bold text-[#054039] mb-3">{solution.title}</h3>
               <p className="text-[#6c757d]">{solution.description}</p>
             </div>
           ))}
