@@ -3,8 +3,8 @@ import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
 import { useLayoutEffect } from 'react';
 
 // Import shared components
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
+import Navbar from './Components/Navbar';
+import Footer from './Components/Footer';
 import LegalSolutionsPage from './Pages/LegalSolutionsPage';
 import BizBaseLegalPage from './Pages/BizBaseLegalPage';
 import HomePage from './Pages/HomePage';
