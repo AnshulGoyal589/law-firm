@@ -11,7 +11,7 @@ const Testimonial = () => {
           <div className="relative z-10">
             {/* Star rating updated with new brand color */}
             <div className="text-2xl text-[#bb8f4d] mb-6">★★★★★</div>
-            <blockquote className="text-base lg:text-xl leading-relaxed text-[#343a40] mb-8 italic">
+            <blockquote className="text-sm lg:text-xl leading-relaxed text-[#343a40] mb-8 italic">
               Shivani Garg from Biz Internal has been an incredible legal support partner for Risqué Boudoir Studios. her approach is highly professional, detailed, and startup-friendly. Right from consulting us on Legal Safety Protocols to ensure risk-free operations, to designing comprehensive NDAs for both clients service providers, and MSAs with a structured action plan for timely documentation, she has delivered with precision. What sets Shivani apart is her patience and clarity in addressing every legal query, making complex legal processes easy to understand. her work gives immense confidence to any business wanting to safeguard its operations and reputation. I would strongly recommend Shivani and Biz Internal to any startup or business looking to establish sound legal foundations and risk-free, compliant operations from day one. Her proactive approach ensures no loose ends and allows founders to focus on growth with peace of mind.  
             </blockquote>
             <cite className="block not-italic">
