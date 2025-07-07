@@ -50,13 +50,13 @@ const AboutUs = () => {
               We specialize in business-focused legal consultancy. Our sessions are short, but the impact lasts long—delivering robust strategies that protect and propel your venture forward.
             </p>
 
-            <div className="flex items-center justify-center lg:justify-start mt-12 space-x-4">
+            {/* <div className="flex items-center justify-center lg:justify-start mt-12 space-x-4">
               <img src={aditi} alt="Kristin D. Watson" className="w-16 h-16 rounded-full object-cover border-2 border-gray-200" />
               <div>
                 <p className="font-bold text-lg text-[#1d2d3d]">Aditi Deshmukh</p>
                 <p className="text-sm font-semibold tracking-wider text-[#C0A068]">HEAD OF IDEA</p>
               </div>
-            </div>
+            </div> */}
           </div>
 
           {/* ====== Right Column: Updated 2x2 Feature Grid ====== */}

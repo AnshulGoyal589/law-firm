@@ -16,7 +16,7 @@ const Hero = () => {
         
         {/* Main Heading with updated brand color */}
         <h1 className="font-serif text-3xl md:text-6xl font-bold text-[#054039] uppercase">
-          Expert Advisory
+          Welcome to Biz Internaglo
         </h1>
       </div>
 

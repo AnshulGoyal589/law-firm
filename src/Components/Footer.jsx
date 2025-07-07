@@ -25,7 +25,7 @@ const Footer = () => {
               <li><a href="#home" className="hover:text-[#bb8f4d] transition-colors">Home</a></li>
               <li><a href="#solutions" className="hover:text-[#bb8f4d] transition-colors">Services</a></li>
               <li><a href="#benefits" className="hover:text-[#bb8f4d] transition-colors">Why Us</a></li>
-              <li><a href="#founder" className="hover:text-[#bb8f4d] transition-colors">Founder</a></li>
+              {/* <li><a href="#founder" className="hover:text-[#bb8f4d] transition-colors">Founder</a></li> */}
             </ul>
           </div>
 
@@ -34,7 +34,7 @@ const Footer = () => {
             <h4 className="text-xl font-bold text-white mb-6 uppercase tracking-wider">Get In Touch</h4>
             <ul className="space-y-3">
               <li>Email: contact@bizBaselegal.com</li>
-              <li>Phone: +1 (234) 567-890</li>
+              {/* <li>Phone: +1 (234) 567-890</li> */}
             </ul>
             <a 
               href="mailto:contact@bizinternaglo.com"

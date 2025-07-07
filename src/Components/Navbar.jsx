@@ -18,7 +18,7 @@ const Navbar = () => {
       <header className="sticky top-0 z-50 bg-white shadow-md">
         
         {/* ====== Top Bar - With updated brand colors ====== */}
-        <div className="bg-[#f8f9fa] text-[#343a40] text-sm hidden lg:block">
+        {/* <div className="bg-[#f8f9fa] text-[#343a40] text-sm hidden lg:block">
           <div className="container mx-auto px-4 lg:px-6 py-2 flex justify-between items-center">
             <div className="flex items-center space-x-6">
               <div className="flex items-center space-x-2">
@@ -35,7 +35,7 @@ const Navbar = () => {
               <a href="mailto:bizinternaglo@gmail.com" className="text-[#343a40] hover:text-[#bb8f4d] transition-colors"><FaMailBulk /></a>
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* ====== Main Navigation Bar - With updated brand colors ====== */}
         <div className="container mx-auto px-4 lg:px-6 py-3 flex justify-between items-center">

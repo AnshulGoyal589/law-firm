@@ -37,7 +37,7 @@ const FoundersSection = () => {
             Meet Our <span className="text-[#bb8f4d]">Leadership</span>
           </h2>
           <p className="text-[#6c757d] mt-4">
-            Our firm is led by a team of dedicated and experienced partners committed to upholding the highest standards of legal excellence.
+           Our firm is led by a team of dedicated partners who bring a fresh, innovative perspective to upholding the highest standards of legal excellence.
           </p>
         </div>
 
