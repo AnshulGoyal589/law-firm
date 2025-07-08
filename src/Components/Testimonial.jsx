@@ -16,8 +16,8 @@ const Testimonial = () => {
             </blockquote>
             <cite className="block not-italic">
               {/* Citation name updated with new brand color */}
-              <span className="block text-xl font-bold font-serif text-[#054039]">Mr. K.</span>
-              <span className="text-[#6c757d]">Lifestyle & Fashion Influencer</span>
+              <span className="block text-xl font-bold font-serif text-[#054039]">Shrikanth Karri</span>
+              <span className="text-[#6c757d]">Studio Space for Commercial Photography & Production Support</span>
             </cite>
           </div>
         </div>
