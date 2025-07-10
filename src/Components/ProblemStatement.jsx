@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-// Import professional icons to replace emojis
+// Import professional icons (no change here)
 import { FaRocket, FaUsers, FaChartPie, FaExclamationTriangle } from 'react-icons/fa';
 
-// --- Data for the two states of the interactive toggle ---
+// Data for the two states of the interactive toggle (no change here)
 const focusAreas = [
   {
     icon: <FaRocket size={32} />,
@@ -33,15 +33,16 @@ const problemArea = {
 };
 
 const ProblemStatement = () => {
-  // State to control the toggle. 'false' shows "Your Focus" by default.
   const [isProblemVisible, setIsProblemVisible] = useState(false);
 
   return (
-    <section id="problem" className="bg-[#f8f9fa] px-24 pb-24">
-      <div className="container mx-auto px-6">
+    // RESPONSIVE CHANGE: Padding is now responsive. Less on mobile, more on desktop.
+    <section id="problem" className="bg-[#f8f9fa] py-16 lg:py-24 px-4 sm:px-6 lg:px-8">
+      <div className="container mx-auto">
         {/* --- More engaging, founder-centric heading --- */}
         <div className="text-center mb-12 max-w-3xl mx-auto">
-          <h2 className="text-4xl font-bold text-[#054039] uppercase">
+          {/* RESPONSIVE CHANGE: Font size adapts to screen width. */}
+          <h2 className="text-3xl sm:text-4xl font-bold text-[#054039] uppercase">
             Are You Facing The <span className="text-[#bb8f4d]">Founder's Paradox?</span>
           </h2>
           <p className="text-lg text-[#6c757d] mt-4">
@@ -49,7 +50,7 @@ const ProblemStatement = () => {
           </p>
         </div>
 
-        {/* --- The Interactive Toggle Switch --- */}
+        {/* --- The Interactive Toggle Switch (no changes needed) --- */}
         <div className="flex justify-center items-center space-x-4 mb-12">
           <span className={`font-semibold transition-colors ${!isProblemVisible ? 'text-[#054039]' : 'text-gray-400'}`}>
             Your Focus
@@ -68,9 +69,11 @@ const ProblemStatement = () => {
         </div>
 
         {/* --- Dynamic Content Area --- */}
-        <div className="relative min-h-[350px]">
-          {/* STATE 1: Founder's Focus Areas */}
-          <div className={`transition-opacity duration-500 ${!isProblemVisible ? 'opacity-100' : 'opacity-0'}`}>
+        {/* RESPONSIVE CHANGE: Removed fixed height and absolute positioning in favor of conditional rendering. 
+             This is the most robust way to handle the content height changing on mobile when cards stack. */}
+        <div>
+          {!isProblemVisible ? (
+            // STATE 1: Founder's Focus Areas
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {focusAreas.map((area) => (
                 <div key={area.title} className="bg-white p-8 rounded-lg text-center shadow-lg border-t-4 border-[#bb8f4d]">
@@ -82,19 +85,19 @@ const ProblemStatement = () => {
                 </div>
               ))}
             </div>
-          </div>
-          
-          {/* STATE 2: The Legal Blind Spot */}
-          <div className={`absolute inset-0 transition-opacity duration-500 flex items-center justify-center ${isProblemVisible ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}>
-            <div className="bg-white p-10 rounded-lg text-center shadow-2xl border-t-4 border-red-500 max-w-2xl w-full">
-                <div className="text-red-500 mx-auto mb-4">{problemArea.icon}</div>
-                <h3 className="font-serif text-3xl mb-4 font-bold text-red-500">{problemArea.title}</h3>
-                <p className="text-gray-500 mb-6">These are the silent killers of startup potential:</p>
-                <ul className="text-[#6c757d] space-y-2 font-medium">
-                  {problemArea.items.map((item) => <li key={item}>{item}</li>)}
-                </ul>
+          ) : (
+            // STATE 2: The Legal Blind Spot
+            <div className="flex items-center justify-center">
+              <div className="bg-white p-10 rounded-lg text-center shadow-2xl border-t-4 border-red-500 max-w-2xl w-full">
+                  <div className="text-red-500 mx-auto mb-4">{problemArea.icon}</div>
+                  <h3 className="font-serif text-3xl mb-4 font-bold text-red-500">{problemArea.title}</h3>
+                  <p className="text-gray-500 mb-6">These are the silent killers of startup potential:</p>
+                  <ul className="text-[#6c757d] space-y-2 font-medium">
+                    {problemArea.items.map((item) => <li key={item}>{item}</li>)}
+                  </ul>
+              </div>
             </div>
-          </div>
+          )}
         </div>
 
       </div>

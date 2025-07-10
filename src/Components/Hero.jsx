@@ -16,7 +16,7 @@ const Hero = () => {
         
         {/* Main Heading with updated brand color */}
         <h1 className="font-serif text-3xl md:text-6xl font-bold text-[#054039] uppercase">
-          Welcome to Biz Internaglo
+          Your Boutique Legal Partners
         </h1>
       </div>
 
@@ -26,12 +26,12 @@ const Hero = () => {
         style={{ backgroundImage: `url(${heroMeetingBg})` }}
       >
         {/* This text remains white for best contrast against the image */}
-        <h2 
+        {/* <h2 
           className="font-serif text-3xl md:text-6xl font-bold text-white/90 uppercase"
           style={{ textShadow: '1px 1px 3px rgba(0, 0, 0, 0.4)' }}
         >
           Legal Service
-        </h2>
+        </h2> */}
       </div>
 
     </section>

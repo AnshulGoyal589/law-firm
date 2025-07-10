@@ -10,7 +10,7 @@ const Solutions = () => {
           Our Core <span className="text-[#bb8f4d]">Offerings</span>
         </h2>
         <p className="text-lg text-[#6c757d] mt-4 mb-16 max-w-3xl mx-auto">
-          We offer two distinct pathways to empower your venture, whether you're an established business or a student founder.
+          We offer two distinct pathways to empower your venture whether u r a startup, an established business or a student Founder , we have got you covered.
         </p>
 
         {/* --- 2-Column Layout for Clickable Blocks --- */}

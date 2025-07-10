@@ -53,7 +53,7 @@ const Benefits = () => {
 
                     {/* Optional: Add a powerful statistic here */}
                     <div className="my-8 pt-6 border-t border-gray-200">
-                        <p className="text-6xl font-bold text-[#054039]">90%+*</p>
+                        {/* <p className="text-6xl font-bold text-[#054039]">90%+*</p> */}
                         <p className="text-sm uppercase tracking-wider text-[#6c757d]">Client Investment Readiness</p>
                         <p className="text-xs text-gray-400 mt-1">*Based on past client outcomes</p>
                     </div>
