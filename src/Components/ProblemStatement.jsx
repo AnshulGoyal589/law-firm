@@ -1,40 +1,105 @@
-import React from 'react';
+import React, { useState } from 'react';
+// Import professional icons to replace emojis
+import { FaRocket, FaUsers, FaChartPie, FaExclamationTriangle } from 'react-icons/fa';
+
+// --- Data for the two states of the interactive toggle ---
+const focusAreas = [
+  {
+    icon: <FaRocket size={32} />,
+    title: 'Product & Growth',
+    items: ['Building the MVP', 'Finding Product-Market Fit', 'User Acquisition'],
+  },
+  {
+    icon: <FaUsers size={32} />,
+    title: 'Team & Culture',
+    items: ['Hiring Key Talent', 'Scaling the Team', 'Defining Company Culture'],
+  },
+  {
+    icon: <FaChartPie size={32} />,
+    title: 'Funding & Metrics',
+    items: ['Investor Pitches', 'Tracking KPIs', 'Managing Burn Rate'],
+  },
+];
+
+const problemArea = {
+  icon: <FaExclamationTriangle size={48} />,
+  title: 'The Legal Blind Spot',
+  items: [
+    'Unprotected Intellectual Property',
+    'Vague Co-Founder Agreements',
+    'Non-compliant Hiring Practices',
+    'Weak Vendor & Client Contracts',
+  ],
+};
 
 const ProblemStatement = () => {
-    const areas = [
-        { title: 'Founders', items: ['Stakeholders', 'Product/Service'], icon: '📋' },
-        { title: 'Business Heads', items: ['Revenue Centers', 'Cost Centers'], icon: '⚙️' },
-        { title: 'HR & Finance', items: ['Well Being', 'Hygiene'], icon: '👥' },
-        { title: 'Legal & Compliance', items: ['?'], icon: '⏱️', isProblem: true }
-    ];
+  // State to control the toggle. 'false' shows "Your Focus" by default.
+  const [isProblemVisible, setIsProblemVisible] = useState(false);
 
-    return (
-        <section id="problem" className="bg-[#f8f9fa] py-20">
-            <div className="container mx-auto px-6">
-                {/* Heading updated with new brand color */}
-                <h2 className="text-4xl text-center mb-2 font-bold text-[#054039] uppercase">The Startup Blind Spot</h2>
-                <p className="text-center text-[#6c757d] mb-12 max-w-2xl mx-auto">While focusing on growth, many startups overlook the one area that can halt their progress instantly: legal and compliance.</p>
-                
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                    {areas.map((area) => (
-                        <div key={area.title} className="bg-white p-8 rounded-lg text-center shadow-lg transform hover:-translate-y-2 transition-transform duration-300">
-                            {/* Icon circle color updated for non-problem cards */}
-                            <div className={`mx-auto mb-6 w-20 h-20 rounded-full flex items-center justify-center text-4xl border-4 ${area.isProblem ? 'border-[#dc3545] text-[#dc3545]' : 'border-[#bb8f4d] text-[#bb8f4d]'}`}>
-                                {area.icon}
-                            </div>
-                            {/* Card title color updated for non-problem cards */}
-                            <h3 className={`font-serif text-2xl mb-4 font-bold ${area.isProblem ? 'text-[#dc3545]' : 'text-[#054039]'}`}>{area.title}</h3>
-                            <ul className="text-[#6c757d]">
-                                {area.items.map((item) => (
-                                    <li key={item} className="mt-2 text-lg">{item}</li>
-                                ))}
-                            </ul>
-                        </div>
-                    ))}
+  return (
+    <section id="problem" className="bg-[#f8f9fa] px-24 pb-24">
+      <div className="container mx-auto px-6">
+        {/* --- More engaging, founder-centric heading --- */}
+        <div className="text-center mb-12 max-w-3xl mx-auto">
+          <h2 className="text-4xl font-bold text-[#054039] uppercase">
+            Are You Facing The <span className="text-[#bb8f4d]">Founder's Paradox?</span>
+          </h2>
+          <p className="text-lg text-[#6c757d] mt-4">
+            You're building the future, but a single legal oversight can undermine it all. We get it.
+          </p>
+        </div>
+
+        {/* --- The Interactive Toggle Switch --- */}
+        <div className="flex justify-center items-center space-x-4 mb-12">
+          <span className={`font-semibold transition-colors ${!isProblemVisible ? 'text-[#054039]' : 'text-gray-400'}`}>
+            Your Focus
+          </span>
+          <button
+            onClick={() => setIsProblemVisible(!isProblemVisible)}
+            className={`relative w-14 h-8 flex items-center rounded-full p-1 cursor-pointer transition-colors duration-300 ${isProblemVisible ? 'bg-red-500' : 'bg-[#054039]'}`}
+          >
+            <div
+              className={`bg-white w-6 h-6 rounded-full shadow-md transform transition-transform duration-300 ${isProblemVisible ? 'translate-x-6' : 'translate-x-0'}`}
+            ></div>
+          </button>
+          <span className={`font-semibold transition-colors ${isProblemVisible ? 'text-red-500' : 'text-gray-400'}`}>
+            The Blind Spot
+          </span>
+        </div>
+
+        {/* --- Dynamic Content Area --- */}
+        <div className="relative min-h-[350px]">
+          {/* STATE 1: Founder's Focus Areas */}
+          <div className={`transition-opacity duration-500 ${!isProblemVisible ? 'opacity-100' : 'opacity-0'}`}>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {focusAreas.map((area) => (
+                <div key={area.title} className="bg-white p-8 rounded-lg text-center shadow-lg border-t-4 border-[#bb8f4d]">
+                  <div className="text-[#bb8f4d] mx-auto mb-4">{area.icon}</div>
+                  <h3 className="font-serif text-2xl mb-4 font-bold text-[#054039]">{area.title}</h3>
+                  <ul className="text-[#6c757d] space-y-2">
+                    {area.items.map((item) => <li key={item}>{item}</li>)}
+                  </ul>
                 </div>
+              ))}
             </div>
-        </section>
-    );
+          </div>
+          
+          {/* STATE 2: The Legal Blind Spot */}
+          <div className={`absolute inset-0 transition-opacity duration-500 flex items-center justify-center ${isProblemVisible ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}>
+            <div className="bg-white p-10 rounded-lg text-center shadow-2xl border-t-4 border-red-500 max-w-2xl w-full">
+                <div className="text-red-500 mx-auto mb-4">{problemArea.icon}</div>
+                <h3 className="font-serif text-3xl mb-4 font-bold text-red-500">{problemArea.title}</h3>
+                <p className="text-gray-500 mb-6">These are the silent killers of startup potential:</p>
+                <ul className="text-[#6c757d] space-y-2 font-medium">
+                  {problemArea.items.map((item) => <li key={item}>{item}</li>)}
+                </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  );
 };
 
 export default ProblemStatement;
