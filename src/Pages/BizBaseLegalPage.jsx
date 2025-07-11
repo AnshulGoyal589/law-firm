@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { FaChalkboardTeacher, FaUniversity, FaRocket } from 'react-icons/fa';
+import Benefits from '../Components/Benefits';
 
 const BizBaseLegalPage = () => {
   return (
@@ -45,6 +46,7 @@ const BizBaseLegalPage = () => {
           </div>
         </div>
       </section>
+      <Benefits/>
     </div>
   );
 };

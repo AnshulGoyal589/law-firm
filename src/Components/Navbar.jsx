@@ -40,7 +40,7 @@ const Navbar = () => {
         {/* ====== Main Navigation Bar - With updated brand colors ====== */}
         <div className="container mx-auto px-4 lg:px-6 py-3 flex justify-between items-center">
           {/* Logo */}
-          <a href="#home">
+          <a href="/">
             <img src={logo} alt="Biz Internaglo Logo" className="h-10 lg:h-12" />
           </a>
 

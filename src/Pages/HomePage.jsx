@@ -23,7 +23,7 @@ const HomePage = () => {
         <ProblemStatement />
         <Founder />
         <Solutions />
-        <Benefits />
+        {/* <Benefits /> */}
         <FoundersSection/>
         <Testimonial />
         {/* <FAQ/> */}
