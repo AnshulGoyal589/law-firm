@@ -27,7 +27,7 @@ const Hero = () => {
       >
         {/* This text remains white for best contrast against the image */}
         <h2 
-          className="font-serif text-3xl md:text-6xl font-bold text-white/90 uppercase"
+          className="font-serif text-center text-3xl md:text-6xl font-bold text-white/90 uppercase"
           style={{ textShadow: '1px 1px 3px rgba(0, 0, 0, 0.4)' }}
         >
           Your Boutique Legal Partners
