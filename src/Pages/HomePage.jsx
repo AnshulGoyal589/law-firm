@@ -21,7 +21,7 @@ const HomePage = () => {
         <BizBaseLegalHeader/>
         <AboutFeatures/>
         <ProblemStatement />
-        <Founder />
+        {/* <Founder /> */}
         <Solutions />
         {/* <Benefits /> */}
         <FoundersSection/>
