@@ -16,12 +16,12 @@ const testimonialsData = [
     title: 'Legal Team Colleague',
     stars: 5,
   },
-  {
-    quote: "Aditi is multifaceted and works with interest on all types of tasks assigned to her. She was dedicated enough to go the extra mile to use the know-how at her disposal and added value to her work with our team. Aditi has always been the go to person in the team. She never shied away from taking new responsibilities or from extending a helping hand to her teammates. I am sure she is going to add supreme value to any organisation she joins.",
-    name: 'Adv. Anahita Arya',
-    title: 'Advocate & Team Lead',
-    stars: 5,
-  },
+  // {
+  //   quote: "Aditi is multifaceted and works with interest on all types of tasks assigned to her. She was dedicated enough to go the extra mile to use the know-how at her disposal and added value to her work with our team. Aditi has always been the go to person in the team. She never shied away from taking new responsibilities or from extending a helping hand to her teammates. I am sure she is going to add supreme value to any organisation she joins.",
+  //   name: 'Adv. Anahita Arya',
+  //   title: 'Advocate & Team Lead',
+  //   stars: 5,
+  // },
 ];
 
 const Testimonial = () => {

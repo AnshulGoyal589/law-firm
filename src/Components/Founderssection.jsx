@@ -14,13 +14,13 @@ const founders = [
   },
   {
     name: 'Shivani Nair',
-    title: 'Co-Founder',
+    title: 'Founding Consultant',
     linkedin: 'https://www.linkedin.com/in/shivani-nairs?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app',
     img: shivaniNair,
   },
   {
     name: 'Aditi Deshmukh',
-    title: 'Advisor & Co-Founder',
+    title: 'Founding Advisor',
     linkedin: 'https://www.linkedin.com/in/aditi-deshmukh-570668190?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app',
     img: aditiDeshmukh,
   },
