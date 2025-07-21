@@ -2,6 +2,18 @@ import React from 'react';
 // Make sure this path to your logo is correct
 import footerLogo from '../assets/images/logo.png'; 
 
+const calendlyUrl = "https://calendly.com/bizinternaglo";
+const openCalendly = (e) => {
+  e.preventDefault();
+  if (window.Calendly) {
+    window.Calendly.initPopupWidget({ url: calendlyUrl });
+  } else {
+    window.open(calendlyUrl, "_blank"); // fallback (opens in new tab)
+  }
+  return false;
+};
+
+
 const Footer = () => {
   return (
     // Background color updated to the new deep green
@@ -36,13 +48,13 @@ const Footer = () => {
               <li>Email: contact@bizBaselegal.com</li>
               {/* <li>Phone: +1 (234) 567-890</li> */}
             </ul>
-            <a 
-              href="mailto:contact@bizinternaglo.com"
+            <button
+  onClick={openCalendly}
               // Button colors updated to the new antique gold
               className="mt-6 inline-block bg-[#bb8f4d] text-white font-bold py-2 px-6 rounded-md hover:bg-[#a27c42] transition-all duration-300"
             >
               Schedule Consultation
-            </a>
+            </button>
           </div>
 
         </div>

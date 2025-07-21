@@ -2,6 +2,18 @@ import React, { useState } from 'react';
 import logo from '../assets/images/logo.png'; // Make sure this path is correct
 import { FaFacebookF, FaTwitter, FaInstagram , FaMailBulk , FaBehance, FaPhone, FaClock, FaChevronDown, FaBars, FaTimes } from 'react-icons/fa';
 
+const calendlyUrl = "https://calendly.com/bizinternaglo";
+const openCalendly = (e) => {
+  e.preventDefault();
+  if (window.Calendly) {
+    window.Calendly.initPopupWidget({ url: calendlyUrl });
+  } else {
+    window.open(calendlyUrl, "_blank"); // fallback (opens in new tab)
+  }
+  return false;
+};
+
+
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -55,9 +67,12 @@ const Navbar = () => {
           </nav>
 
           {/* CTA Button */}
-          <a href="#footer" className="hidden lg:inline-block bg-[#bb8f4d] text-white font-bold py-3 px-6 rounded-md hover:bg-[#a27c42] transition-all duration-300">
-            Free Evaluation
-          </a>
+          <button
+  onClick={openCalendly}
+  className="hidden lg:inline-block bg-[#bb8f4d] text-white font-bold py-3 px-6 rounded-md hover:bg-[#a27c42] transition-all duration-300"
+>
+  Free Evaluation
+</button>
 
           {/* Mobile Menu Button (Hamburger) */}
           <button onClick={() => setIsMenuOpen(true)} className="lg:hidden text-2xl text-[#054039]">
@@ -86,9 +101,12 @@ const Navbar = () => {
                 {link.hasDropdown && <FaChevronDown size={16} />}
               </a>
             ))}
-             <a href="#footer" onClick={() => setIsMenuOpen(false)} className="mt-6 inline-block bg-[#bb8f4d] text-white font-bold py-3 px-8 rounded-md hover:bg-[#a27c42] transition-all duration-300">
-                Free Evaluation
-             </a>
+             <button
+  onClick={(e) => { setIsMenuOpen(false); openCalendly(e); }}
+  className="mt-6 inline-block bg-[#bb8f4d] text-white font-bold py-3 px-8 rounded-md hover:bg-[#a27c42] transition-all duration-300"
+>
+  Free Evaluation
+</button>
         </nav>
       </div>
     </>
