@@ -19,9 +19,9 @@ const Navbar = () => {
 
   const navLinks = [
     { name: 'Home', href: '#home', hasDropdown: true },
-    { name: 'Why Us', href: '#benefits', hasDropdown: false },
+    // { name: 'Why Us', href: '#benefits', hasDropdown: false },
     { name: 'Services', href: '#solutions', hasDropdown: false },
-    { name: 'Founder', href: '#founder', hasDropdown: false },
+    // { name: 'Founder', href: '#founder', hasDropdown: false },
     { name: 'Testimonials', href: '#testimonials', hasDropdown: false },
   ];
 

@@ -36,7 +36,7 @@ const Footer = () => {
               {/* Hover color updated to the new antique gold */}
               <li><a href="#home" className="hover:text-[#bb8f4d] transition-colors">Home</a></li>
               <li><a href="#solutions" className="hover:text-[#bb8f4d] transition-colors">Services</a></li>
-              <li><a href="#benefits" className="hover:text-[#bb8f4d] transition-colors">Why Us</a></li>
+              {/* <li><a href="#benefits" className="hover:text-[#bb8f4d] transition-colors">Why Us</a></li> */}
               {/* <li><a href="#founder" className="hover:text-[#bb8f4d] transition-colors">Founder</a></li> */}
             </ul>
           </div>
