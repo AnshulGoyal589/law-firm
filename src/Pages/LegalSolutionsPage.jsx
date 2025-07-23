@@ -33,6 +33,8 @@ const LegalSolutionsPage = () => {
           </p>
           <ul className="list-disc list-inside text-[#6c757d] text-lg space-y-2 mb-10">
             <li>Drafting and reviewing all commercial contracts.</li>
+            <li> Data Privacy and AI compliance. </li>
+            <li> Contractual Risk Mitigation Strategies. </li>
             <li>Ensuring regulatory compliance within your industry.</li>
             <li>Structuring founder agreements and shareholder documents.</li>
             <li>Preparing your business for due diligence and fundraising rounds.</li>

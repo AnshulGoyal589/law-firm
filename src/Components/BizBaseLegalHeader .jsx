@@ -11,9 +11,9 @@ const BizBaseLegalHeader = () => {
           
           {/* Content Block with updated brand colors */}
           <div className="text-center lg:text-left">
-            <p className="text-sm font-semibold tracking-[0.2em] text-[#bb8f4d] uppercase mb-4">
+            {/* <p className="text-sm font-semibold tracking-[0.2em] text-[#bb8f4d] uppercase mb-4">
               •• BIZ BASE LEGAL
-            </p>
+            </p> */}
             <h2 className="font-serif text-3xl md:text-5xl font-bold text-[#054039] uppercase leading-tight">
               High-Impact Counsel For Modern Business.
             </h2>

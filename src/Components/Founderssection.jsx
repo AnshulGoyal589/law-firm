@@ -8,7 +8,7 @@ import aditiDeshmukh from '../assets/images/aditi-deshmukh.png';
 const founders = [
   {
     name: 'Shivani Garg',
-    title: 'Co-Founder',
+    title: 'Founder',
     linkedin: 'https://www.linkedin.com/in/shivani-g-524b2b64/',
     img: shivaniGarg,
   },

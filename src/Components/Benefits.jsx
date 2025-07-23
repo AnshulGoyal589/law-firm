@@ -58,7 +58,7 @@ const Benefits = () => {
                         <p className="text-xs text-gray-400 mt-1">*Based on past client outcomes</p>
                     </div>
 
-                    <a href="#contact" className="inline-block bg-[#054039] text-white font-bold py-3 px-8 rounded-md hover:bg-[#032a25] transition-all duration-300">
+                    <a href="/#contact" className="inline-block bg-[#054039] text-white font-bold py-3 px-8 rounded-md hover:bg-[#032a25] transition-all duration-300">
                       Secure Your Startup
                     </a>
                 </div>
