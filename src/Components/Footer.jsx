@@ -45,7 +45,7 @@ const Footer = () => {
           <div>
             <h4 className="text-xl font-bold text-white mb-6 uppercase tracking-wider">Get In Touch</h4>
             <ul className="space-y-3">
-              <li>Email: contact@bizBaselegal.com</li>
+              <li>Email: contact@bizinternaglo.com</li>
               {/* <li>Phone: +1 (234) 567-890</li> */}
             </ul>
             <button
