@@ -25,6 +25,7 @@ const problemArea = {
   icon: <FaExclamationTriangle size={48} />,
   title: 'The Legal Blind Spot',
   items: [
+    'Compliance Readiness',
     'Unprotected Intellectual Property',
     'Vague Co-Founder Agreements',
     'Non-compliant Hiring Practices',
