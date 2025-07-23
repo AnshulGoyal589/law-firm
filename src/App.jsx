@@ -4,7 +4,7 @@ import { useLayoutEffect } from 'react';
 
 // Import shared components
 import Navbar from './Components/Navbar';
-import Footer from './Components/Footer';
+import Footer from './components/Footer';
 import LegalSolutionsPage from './Pages/LegalSolutionsPage';
 import BizBaseLegalPage from './Pages/BizBaseLegalPage';
 import HomePage from './Pages/HomePage';
